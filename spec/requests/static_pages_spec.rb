@@ -9,9 +9,14 @@ describe "Static pages" do
       expect(page).to have_content('Profit Sync')
     end
 	
-	it "should have the title 'Profit Sync - Home'" do
+	it "should have the title 'Profit Sync'" do
       visit '/static_pages/home'
-      expect(page).to have_title('Profit Sync - Home')
+      expect(page).to have_title('Profit Sync')
+    end
+	
+	it "should not have the title ' - Home'" do
+      visit '/static_pages/home'
+      expect(page).not_to have_title(' - Home')
     end
   end
   
