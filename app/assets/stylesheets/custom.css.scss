@@ -1,0 +1,83 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$alink: #06c;
+$ahover: #f63;
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 10px;
+  background:#ddd;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+#logo {
+  font-size: 2.7em;
+  font-weight: bold;
+  font-family: Helvetica;  
+  
+  float: left;
+  color: $alink;
+  letter-spacing: 2px;
+  text-decoration: none;
+  
+  &:hover {
+    color: $ahover;
+    text-decoration: none;
+  }
+}
+
+.container {
+  border:2px solid #a1a1a1;
+  padding:10px 40px; 
+  background:#fff;
+  border-radius:10px;
+  width: 750px;
+  margin: 0 auto;
+}
+
+.first-post {
+  height: 80px;
+  margin-bottom: 20px;
+  
+  p {
+	color: #666;
+    font-style: italic;
+    margin-top: 56px;
+  }
+}
+
+nav {
+  float: right;
+  
+  a {
+    font-size: 1.2em;
+    font-family: Helvetica;  
+    color: $alink;
+    text-decoration: none;
+	
+	&:hover {
+      text-decoration: none;
+	  color: $ahover;
+	}
+  }
+  
+  ul {
+    text-align: left;
+    display: inline;
+    list-style: none;
+	
+	li {
+      margin-top: 15px;
+	  margin-left: 30px;
+	  display: inline-block;
+	}
+  }
+}

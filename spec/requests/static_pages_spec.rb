@@ -2,34 +2,27 @@ require 'spec_helper'
 
 describe "Static pages" do
 
+  subject { page }
+  
   describe "Home page" do
-
-    it "should have the content 'Profit Sync'" do
-      visit '/static_pages/home'
-      expect(page).to have_content('Profit Sync')
-    end
-	
-	it "should have the title 'Profit Sync'" do
-      visit '/static_pages/home'
-      expect(page).to have_title('Profit Sync')
-    end
-	
-	it "should not have the title ' - Home'" do
-      visit '/static_pages/home'
-      expect(page).not_to have_title(' - Home')
-    end
+	before { visit root_path }
+  
+    it { have_content('Profit Sync') }
+	it { should have_title('Profit Sync') }
+	it { should_not have_title(' - Home') }
   end
   
   describe "About page" do
+	before { visit about_path }
 
-    it "should have the content 'About Profit Sync'" do
-      visit '/static_pages/about'
-      expect(page).to have_content('About Profit Sync')
-    end
-	
-	it "should have the title 'Profit Sync - About'" do
-      visit '/static_pages/about'
-      expect(page).to have_title('Profit Sync - About')
-    end
+    it { should have_content('Информация') }
+	it { should have_title('Profit Sync - Инфо') }
+  end
+  
+  describe "Contact page" do
+	before { visit contact_path }
+
+    it { should have_content('Обратная связь') }
+	it { should have_title('Profit Sync - Контакты') }
   end
 end
