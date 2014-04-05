@@ -1,0 +1,106 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+html {
+  overflow-y: scroll; }
+
+body {
+  padding-top: 10px;
+  background: #ddd;
+  font-size: 1.0em;
+  font-family: Helvetica; }
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em; }
+
+#logo {
+  font-size: 2.7em;
+  font-weight: bold;
+  float: left;
+  color: #0066cc;
+  letter-spacing: 2px;
+  text-decoration: none; }
+  #logo:hover {
+    color: #ff6633;
+    text-decoration: none; }
+
+.container {
+  border: 2px solid #a1a1a1;
+  padding: 0 20px 10px;
+  background: #fff;
+  border-radius: 10px;
+  width: 750px;
+  margin: 0 auto; }
+
+.first-post {
+  height: 80px;
+  margin-bottom: 20px;
+  padding-top: 10px; }
+  .first-post p {
+    color: #666;
+    font-style: italic;
+    margin-top: 56px; }
+
+nav {
+  float: right; }
+  nav a {
+    font-size: 1.2em;
+    color: #0066cc;
+    text-decoration: none; }
+    nav a:hover {
+      text-decoration: none;
+      color: #ff6633; }
+  nav ul {
+    text-align: left;
+    display: inline;
+    list-style: none; }
+    nav ul li {
+      margin-top: 15px;
+      margin-left: 30px;
+      display: inline-block; }
+
+.sign-in-form {
+  width: 200px;
+  margin: 0 auto; }
+  .sign-in-form input {
+    width: 200px;
+    height: 20px;
+    margin-bottom: 15px; }
+  .sign-in-form .sign-in {
+    font-size: 1.2em;
+    height: 40px;
+    letter-spacing: 2px;
+    border-radius: 10px; }
+
+.alert {
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: auto;
+  margin: 10px; }
+
+.alert-error {
+  background: #FFAFAF; }
+
+.admin {
+  padding: 10px;
+  margin: -20px -10px;
+  background: #333; }
+  .admin a {
+    color: #ff6633;
+    margin: 0 5px;
+    text-decoration: none; }
+    .admin a:hover {
+      text-decoration: none;
+      color: #0066cc; }

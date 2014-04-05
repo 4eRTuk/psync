@@ -1,0 +1,14 @@
+<% provide(:title, "Авторизация") %>
+
+<h1>Авторизация</h1>
+<div class="sign-in-form">
+<%= form_for(:session, url: sessions_path) do |f| %>
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.label :Пароль %>
+      <%= f.password_field :password %>
+
+      <%= f.submit "Войти", class: "sign-in" %>
+<% end %>
+</div>
