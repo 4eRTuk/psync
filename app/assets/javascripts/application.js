@@ -12,5 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.facebox
 //= require turbolinks
 //= require_tree .
+
+jQuery(document).ready(function($) {
+    jQuery('a[rel*=facebox]').facebox()
+  })

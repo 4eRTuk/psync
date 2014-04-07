@@ -1,17 +1,17 @@
 ﻿<header>
 <div class="container first-post">
+<%= link_to image_tag("logo.png", :border => 0), root_path, id: "logo" %>
 <%= link_to "Profit Sync", root_path, id: "logo" %>
 <nav>
   <ul class="">
-    <li><%= link_to "Скачать",    '#' %></li>
-    <li><%= link_to "Changelog",    '#' %></li>
+    <li><%= link_to "Скачать", 'https://dl.dropboxusercontent.com/s/wuk2xi76x7f3jrq/ProfitSync.apk' %></li>
+    <li><%= link_to "Changelog",    'http://dl.dropboxusercontent.com/s/eamx0zgvki1t5q4/changelog.txt', rel: "facebox" %></li>
     <li><%= link_to "Инфо",    about_path %></li>
     <li><%= link_to "Контакты", contact_path %></li>
   </ul>
 </nav>
 <p>
-Последняя версия 0.2.1
-Обновлено 12.01.14
+<%= raw apk_last_version %>
 </p>
 </div>
 </header>
