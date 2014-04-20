@@ -1,0 +1,12 @@
+<% provide(:title, @post.title) %>
+
+<div class="vpost">
+	<div class="vpost-header">
+	<%= link_to "#{@post.title} (скачать эту версию)", @post.vlink %>
+	<% if signed_in? %>
+		(<%= link_to "ред.", edit_vpost_path(@post) %> / <%= link_to "уд.", @post, method: :delete, data: { confirm: "Вы уверены?" } %>)
+	<% end %>
+		<%= time_tag @post.created_at, :format => "%m / %d / %Y %I:%M %p" %></div>
+	<div class="content"><%= raw(@post.content) %></div>
+</div>
+

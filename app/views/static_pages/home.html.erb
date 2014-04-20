@@ -1,2 +1,8 @@
-<h1>Profit Sync</h1>
-<p>Loading...</p>
+<% if @posts.any? %>
+	<div class="total">Всего версий: <%= @total %><%= link_to "просмотреть все", vposts_path, class: "link" %></div>
+	<ul class="vpost-list">
+		<%= render @posts %>
+	</ul>
+<% else %>
+	Скоро все будет...
+<% end %>

@@ -1,6 +1,6 @@
 <% if signed_in? %>
 <div class="admin">
-<%= link_to "Новый пост", signout_path, method: "delete" %>
+<%= link_to "Новый пост", new_vpost_path %>
 <%= link_to "Выход", signout_path, method: "delete" %>
 </div>
 <% end %>

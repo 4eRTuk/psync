@@ -1,0 +1,9 @@
+<li>
+	<div class="vpost-header">
+		<%= link_to raw("<strong>Version #{vpost.title}</strong> at #{vpost.created_at.strftime('%m / %d / %Y %I:%M %p')}"), vpost %>
+		<% if signed_in? %>
+			(<%= link_to "ред.", edit_vpost_path(vpost) %> / <%= link_to "уд.", vpost, method: :delete, data: { confirm: "Вы уверены?" } %>)
+		<% end %>
+		<%= link_to "скачать", vpost.vlink, class: "link" %>
+	</div>
+</li>

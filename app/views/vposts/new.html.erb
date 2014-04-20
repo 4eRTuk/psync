@@ -1,0 +1,18 @@
+<% provide(:title, "Новый пост") %>
+
+<div class="vpost">
+	<%= form_for(@vpost) do |f| %>
+	<%= render 'shared/error_messages' %>
+	
+	<%= f.label :title, "Заголовок" %>
+	<%= f.text_field :title %>
+	
+	<%= f.label :vlink, "Ссылка для скачивания" %>
+	<%= f.text_field :vlink %>
+	
+	<%= f.label :content, "Пост" %>
+	<%= f.text_area :content, class: "new-content" %>
+	
+	<%= f.submit "Создать пост" %>
+	<% end %>
+</div>

@@ -3,10 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $alink: #06c;
 $ahover: #f63;
-
-html {
-  overflow-y: scroll;
-}
+$borderGray: #a1a1a1;
 
 body {
   padding-top: 10px;
@@ -45,12 +42,15 @@ a {
 }
 
 .container {
-  border:2px solid #a1a1a1;
+  border:2px solid $borderGray;
   padding: 0 20px 10px;
   background:#fff;
   border-radius:10px;
   width: 750px;
   margin: 0 auto;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
 }
 
 nav {
@@ -115,9 +115,13 @@ nav {
   background: #FFAFAF;
 }
 
+.alert-notice {
+  background: #FFE3A0;
+}
+
 .admin {
 	padding: 10px;
-	margin: -20px -10px;
+	margin: -18px -10px;
 	background: #333;
 	
 	a {
@@ -135,4 +139,105 @@ nav {
 #facebox .content {
     width: 600px;
 	padding: 10px 0;
+}
+
+.vpost {
+	width: 90%;
+	padding: 5px;
+	margin: 20px auto 0;
+	
+	input[type=submit] {
+		width: 100%;
+		margin: 15px auto 0;
+		height: 40px;
+	}
+	
+	input {
+		width: 99%;
+	}
+	
+	.new-content {
+		vertical-align: top;
+		width: 98%;
+		height: 100px;
+		padding: 5px;
+	}
+	
+	time {
+		float:right;
+	}
+	
+	li {
+		list-style: none;
+		margin: 5px 0;
+	}
+
+	ul li {	
+		list-style-type: disc;
+	}
+	
+	.content {
+		margin: 20px;
+	}
+	
+}
+
+.vpost-header {
+	border-bottom:2px solid $borderGray;
+	border-radius: 5px;
+	padding: 5px 10px;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.vpost-list {
+	width: 60%;
+	margin-left: -40px;
+	
+	li {
+		list-style: none;
+		margin: 5px 0;
+	}
+}
+
+.c {
+	margin: 0 auto;
+}
+
+.pagination {
+	text-align: center;
+	margin: 20px;
+	
+	a, em, span {
+		border-bottom:2px solid $borderGray;
+		border-radius: 5px;
+		padding: 4px 8px;
+		margin: 0 -2px;
+		-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+		-moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+		box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+	}
+}
+	
+.link {
+	float:right;
+}
+
+.bug-list {
+	width: 40%;
+}
+
+.total {
+	width: 60%;
+	padding: 20px 0 0;
+	font-weight:bold;
+}
+
+#error_explanation {
+	ul {
+		list-style: none;
+		margin-left: -20px;
+		color: red;
+	}
 }
