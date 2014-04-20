@@ -61,6 +61,7 @@ nav {
   }
   
   ul {
+	padding-left: 0;
     text-align: left;
     display: inline;
     list-style: none;
@@ -203,6 +204,7 @@ nav {
 
 .c {
 	margin: 0 auto;
+	text-align: center;
 }
 
 .pagination {
