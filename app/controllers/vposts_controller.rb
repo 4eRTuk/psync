@@ -2,7 +2,7 @@ class VpostsController < ApplicationController
 	before_action :signed_in_user, except: [:show, :index]
   
   def index
-	@vposts = Vpost.paginate(page: params[:page], per_page: 2)
+	@vposts = Vpost.paginate(page: params[:page], per_page: 10)
   end
   
   def show
