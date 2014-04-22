@@ -1,8 +1,23 @@
 <% if @posts.any? %>
-	<div class="total">Всего версий: <%= @total %><%= link_to "просмотреть все", vposts_path, class: "link" %></div>
-	<ul class="vpost-list">
-		<%= render @posts %>
-	</ul>
+	<table style="width:100%;"><tr>
+	<td style="width:55%;">
+		<div class="total">Всего версий: <%= @total %><%= link_to "просмотреть все", vposts_path, class: "link" %></div>
+		<ul class="vpost-list">
+			<%= render @posts %>
+		</ul>
+	</td>
+	
+	<td style="width:45%;vertical-align:top;padding-left:25px;">
+		<div class="total">Известные баги <%= link_to "сообщить о новом", contact_path, class: "link" %></div>
+		<ul class="vpost-header buglist">
+			<% @bugs.each do |s| %>
+			<li>
+				<%= s %>
+			</li>
+			<% end %>
+		</ul>
+	</td>
+	</tr></table>
 <% else %>
 	Скоро все будет...
 <% end %>

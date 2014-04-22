@@ -10,7 +10,7 @@ body {
   background:#ddd;
   
     font-size: 1.0em;
-    font-family: Helvetica;  
+    font-family: Helvetica, Arial;  
 }
 
 p {
@@ -193,7 +193,6 @@ nav {
 }
 
 .vpost-list {
-	width: 60%;
 	margin-left: -40px;
 	
 	li {
@@ -226,12 +225,14 @@ nav {
 	float:right;
 }
 
-.bug-list {
-	width: 40%;
+.buglist {
+	margin:15px 0 0 0;
+	padding-left:25px;
+    font-size: 0.9em;
+	text-align:justify;
 }
 
 .total {
-	width: 60%;
 	padding: 20px 0 0;
 	font-weight:bold;
 }
