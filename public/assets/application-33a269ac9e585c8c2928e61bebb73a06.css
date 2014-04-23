@@ -1,0 +1,272 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+
+ */
+
+#facebox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: left;
+}
+
+
+#facebox .popup{
+  position:relative;
+  border:3px solid rgba(0,0,0,0);
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  -webkit-box-shadow:0 0 18px rgba(0,0,0,0.4);
+  -moz-box-shadow:0 0 18px rgba(0,0,0,0.4);
+  box-shadow:0 0 18px rgba(0,0,0,0.4);
+}
+
+#facebox .content {
+  display:table;
+  width: 370px;
+  padding: 10px;
+  background: #fff;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+}
+
+#facebox .content > p:first-child{
+  margin-top:0;
+}
+#facebox .content > p:last-child{
+  margin-bottom:0;
+}
+
+#facebox .close{
+  position:absolute;
+  top:5px;
+  right:5px;
+  padding:2px;
+  background:#fff;
+}
+#facebox .close img{
+  opacity:0.3;
+}
+#facebox .close:hover img{
+  opacity:1.0;
+}
+
+#facebox .loading {
+  text-align: center;
+}
+
+#facebox .image {
+  text-align: center;
+}
+
+#facebox img {
+  border: 0;
+  margin: 0;
+}
+
+#facebox_overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+}
+
+.facebox_hide {
+  z-index:-100;
+}
+
+.facebox_overlayBG {
+  background-color: #000;
+  z-index: 99;
+}
+body {
+  padding-top: 10px;
+  background: #ddd;
+  font-size: 1.0em;
+  font-family: Arial; }
+
+p {
+  font-size: 1.0em;
+  line-height: 1.7em; }
+
+a {
+  color: #0066cc;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none;
+    color: #ff6633; }
+
+#logo {
+  font-size: 2.8em;
+  font-weight: bold;
+  float: left;
+  letter-spacing: 2px;
+  margin-top: 15px; }
+  #logo img {
+    margin-right: 10px; }
+
+.container {
+  border: 2px solid #a1a1a1;
+  padding: 0 20px 10px;
+  background: #fff;
+  border-radius: 10px;
+  width: 750px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25); }
+
+nav {
+  float: right; }
+  nav a {
+    font-size: 1.2em; }
+  nav ul {
+    padding-left: 0;
+    text-align: left;
+    display: inline;
+    list-style: none; }
+    nav ul li {
+      margin-top: 15px;
+      margin-left: 20px;
+      display: inline-block; }
+
+.first-post {
+  height: 80px;
+  margin-bottom: 20px;
+  padding-top: 10px; }
+  .first-post p {
+    color: #666;
+    font-style: italic;
+    margin-top: 56px;
+    text-align: right; }
+
+.sign-in-form {
+  width: 200px;
+  margin: 0 auto; }
+  .sign-in-form input {
+    width: 200px;
+    height: 20px;
+    margin-bottom: 15px; }
+  .sign-in-form .sign-in {
+    font-size: 1.2em;
+    height: 40px;
+    letter-spacing: 2px;
+    border-radius: 10px; }
+
+.alert {
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: auto;
+  margin: 10px; }
+
+.alert-error {
+  background: #FFAFAF; }
+
+.alert-notice {
+  background: #FFE3A0; }
+
+.alert-success {
+  background: #D3E992; }
+
+.admin {
+  padding: 10px;
+  margin: -18px -10px;
+  background: #333; }
+  .admin a {
+    color: #ff6633;
+    margin: 0 5px;
+    text-decoration: none; }
+    .admin a:hover {
+      text-decoration: none;
+      color: #0066cc; }
+
+#facebox .content {
+  width: 600px;
+  padding: 10px 0; }
+
+.vpost {
+  width: 90%;
+  padding: 5px;
+  margin: 20px auto 0; }
+  .vpost input[type=submit] {
+    width: 100%;
+    margin: 15px auto 0;
+    height: 40px; }
+  .vpost input {
+    width: 99%; }
+  .vpost .new-content {
+    vertical-align: top;
+    width: 98%;
+    height: 100px;
+    padding: 5px; }
+  .vpost time {
+    float: right; }
+  .vpost li {
+    list-style: none;
+    margin: 5px 0; }
+  .vpost ul li {
+    list-style-type: disc; }
+  .vpost .content {
+    margin: 20px; }
+
+.vpost-header {
+  border-bottom: 2px solid #a1a1a1;
+  border-radius: 5px;
+  padding: 5px 10px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25); }
+
+.vpost-list {
+  margin-left: -40px; }
+  .vpost-list li {
+    list-style: none;
+    margin: 5px 0; }
+
+.c {
+  margin: 0 auto;
+  text-align: center; }
+
+.pagination {
+  text-align: center;
+  margin: 20px; }
+  .pagination a, .pagination em, .pagination span {
+    border-bottom: 2px solid #a1a1a1;
+    border-radius: 5px;
+    padding: 4px 8px;
+    margin: 0 -2px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.25); }
+
+.link {
+  float: right; }
+
+.buglist {
+  margin: 15px 0 0 0;
+  padding-left: 25px;
+  font-size: 0.9em;
+  text-align: justify; }
+
+.total {
+  padding: 20px 0 0;
+  font-weight: bold; }
+
+#error_explanation ul {
+  list-style: none;
+  margin-left: -20px;
+  color: red; }

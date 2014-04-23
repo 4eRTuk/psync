@@ -10,7 +10,7 @@ body {
   background:#ddd;
   
     font-size: 1.0em;
-    font-family: Helvetica, Arial;  
+    font-family: Arial;  
 }
 
 p {
@@ -118,6 +118,10 @@ nav {
 
 .alert-notice {
   background: #FFE3A0;
+}
+
+.alert-success {
+  background: #D3E992;
 }
 
 .admin {

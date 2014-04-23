@@ -1,4 +1,19 @@
 <% provide(:title, 'Контакты') %>
 
 <h1>Обратная связь</h1>
-<p>Loading...</p>
+
+<div class="vpost">
+	<%= form_tag do %>
+	
+	<%= label_tag :name, "Ваше имя:" %>
+	<%= text_field_tag :name, cookies[:name] %>
+	
+	<%= label_tag :umail, "Адрес почты:" %>
+	<%= email_field_tag :umail, cookies[:umail] %>
+	
+	<%= label_tag :data, "Сообщение:" %>
+	<%= text_area_tag :data, cookies[:data], class: "new-content" %>
+	
+	<%= submit_tag "Отправить" %>
+	<% end %>
+</div>

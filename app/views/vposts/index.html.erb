@@ -1,11 +1,11 @@
-<% provide(:title, "Все посты (стр.#{params[:page]})") %>
+<% provide(:title, "Все посты ") %>
 
 <% if @vposts.count > 0 %>
-	<h4>Страница <%= params[:page] %></h4>
+	<h4 class='vpost c'><% if !params[:page].nil? %>Страница <%= params[:page] %><% else %>Все версии<% end %></h4>
 <% end %>
 <%= will_paginate @vposts %>
 
-<ul class="vpost-list c">
+<ul class="vpost-list">
   <%= render @vposts %>
 </ul>
 
