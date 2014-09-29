@@ -8,13 +8,10 @@
 	</td>
 	
 	<td style="width:45%;vertical-align:top;padding-left:25px;">
-		<div class="total">Известные баги <%= link_to "сообщить о новом", contact_path, class: "link" %></div>
+		<div class="total">Возможные баги <%= link_to "сообщить о новом", contact_path, class: "link" %></div>
 		<ul class="vpost-header buglist">
-			<% @bugs.each do |s| %>
-			<li>
-				<%= s %>
-			</li>
-			<% end %>
+			<li>вылет сервиса при отключении/подключении интернет-соединения</li>
+			<li>что-то еще :)</li>
 		</ul>
 	</td>
 	</tr></table>

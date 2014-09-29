@@ -13,7 +13,7 @@ module ApplicationHelper
 	
 	# Returns the info about last apk version.
 	def apk_last_version
-	lines = open("http://dl.dropboxusercontent.com/s/knjxyq91042j5y6/version.txt").readlines
+	lines = open("#{Rails.public_path}/version.txt").readlines
 	"Последняя версия <strong>#{lines[1]}</strong> Обновлено <strong>#{lines[2]}</strong>"
 	end
 end
